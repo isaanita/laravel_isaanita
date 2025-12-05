@@ -27,15 +27,15 @@ Fitur utama:
 
 ---
 
+## Username & Password
+- username: admin
+- password: password123
+
+---
+
 ## Installasi
 
 1. Clone repository:
 ```bash
 git clone https://github.com/isaanita/laravel_isaanita
 cd laravel_isaanita
-
----
-
-## Username & Password
-- username: admin
-- password: password123
