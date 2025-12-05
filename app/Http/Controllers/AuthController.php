@@ -14,13 +14,11 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        // Validasi
         $request->validate([
             'username' => 'required',
             'password' => 'required',
         ]);
 
-        // Coba login menggunakan username + password
         if (Auth::attempt([
             'username' => $request->username,
             'password' => $request->password

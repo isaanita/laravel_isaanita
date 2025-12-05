@@ -1,14 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RumahSakitController;
 use App\Http\Controllers\PasienController;
+
+Route::redirect('/', '/login');
 
 Route::get('/login', [AuthController::class, 'loginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
